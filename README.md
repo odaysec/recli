@@ -74,7 +74,6 @@ recli [GLOBAL_OPTIONS] <COMMAND> [COMMAND_OPTIONS] <INPUT_FILE>
 | `--version` | Show version information |
 | `--help` | Show help message |
 
-### Command Reference
 
 #### Basic Analysis
 
@@ -112,9 +111,8 @@ recli patch --offset=0x1234 --bytes="90 90 90" target.exe
 recli dump --address=0x401000 --size=256 process.dmp
 ```
 
-## Examples
 
-### Example 1: Basic Binary Analysis
+### Basic Binary Analysis
 
 ```bash
 # Analyze a Windows executable
@@ -124,7 +122,7 @@ recli analyze malware.exe -f json -o report.json
 jq '.' report.json
 ```
 
-### Example 2: Advanced RE Workflow
+### Advanced RE Workflow
 
 ```bash
 # 1. Extract interesting strings
